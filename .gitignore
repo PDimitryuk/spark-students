@@ -1,0 +1,14 @@
+*.class
+*.log
+
+.cache
+.history
+.lib/
+target/
+project/boot/
+project/project/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
