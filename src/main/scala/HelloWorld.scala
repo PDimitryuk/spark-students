@@ -10,7 +10,7 @@ object HelloWorld extends App {
   val classLoader: ClassLoader = getClass.getClassLoader
   val file: File = new File(classLoader.getResource("hadoop/bin/winutils.exe").getFile)
   val hadoopPath = file.getAbsolutePath
-  System.setProperty("hadoop.home.dir", s"$hadoopPath\\..\\..")
+  System.setProperty("hadoop.home.dir", s"$hadoopPath/../..")
 
   //initialise spark context
   val conf = new SparkConf()
